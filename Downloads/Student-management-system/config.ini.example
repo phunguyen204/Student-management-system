@@ -1,0 +1,16 @@
+; ─── Cấu hình MySQL cho Hệ thống Quản lý Sinh viên ───
+; Sao chép file này thành config.ini và điền thông tin kết nối.
+; KHÔNG commit file config.ini chứa mật khẩu thật vào repository.
+;
+; Ngoài ra có thể dùng biến môi trường (ưu tiên cao hơn file):
+;   SMS_DB_HOST, SMS_DB_PORT, SMS_DB_USER, SMS_DB_PASSWORD, SMS_DB_NAME
+;
+; Đối với kiểm thử MySQL integration, dùng biến:
+;   SMS_TEST_MYSQL_JSON = {"user":"...","password":"...","host":"localhost"}
+
+[mysql]
+host = localhost
+port = 3306
+user = root
+password = Phudai123@
+database = admin_db
